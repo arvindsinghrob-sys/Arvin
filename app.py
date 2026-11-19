@@ -3,7 +3,7 @@ import time
 import requests
 from flask import Flask, request, render_template_string
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 FIREBASE_DB_URL = os.environ.get(
     "FIREBASE_DB_URL",
